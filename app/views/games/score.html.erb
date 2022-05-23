@@ -1,0 +1,10 @@
+<h1>Your result</h1>
+
+<ul>
+  <li>Attempt: <%= @attempt%></li>
+  <li>Word: <%= @result[:word]%></li>
+  <li>Message: <%= @result[:message]%></li>
+  <li>Score: <%= @result[:score]%></li>
+</ul>
+
+<%= link_to("Restart", new_path) %>

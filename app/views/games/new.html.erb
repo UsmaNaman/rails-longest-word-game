@@ -1,0 +1,10 @@
+<h1>WELCOME TO THE LONGEST WORD GAME</h1>
+
+<h2>Grid: <%= @letters %></h2>
+
+<form action="<%= score_url %>" method="post" data-turbo='false'>
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="text" name="attempt">
+  <input type="hidden" name="letters" value="<%= @letters %>">
+  <input type="submit" value="GO">
+</form>
